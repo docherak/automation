@@ -16,7 +16,11 @@ sudo apt-get install inotify-tools
 **Usage:**
 
 ```
+// make executable
 chmod a+x downloadsScanner.sh
+
+// exec
+./downloadsScanner.sh
 ```
 
 **How I launch this on reboot:**
