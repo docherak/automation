@@ -11,10 +11,10 @@ PYTHON=Code/Python
 PICS=Pictures
 
 # Checking loop
+# prereq: inotify-tools
 while inotifywait -e modify,create,delete,move $search_dir
 do
-
-	# prereq: inotify-tools
+	sleep 10m
 	
 	for file in ${search_dir}/*
 	do

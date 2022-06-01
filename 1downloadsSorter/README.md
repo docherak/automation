@@ -1,7 +1,9 @@
 # Downloads Manager
 The following is a bash script I use to manage my Downloads folder.
 
-It scans for any changes in the Downloads folder (excl. subfolders) and sorts the files by scanning their extensions, moving them to the specified folders accordingly.
+It scans for any changes in the Downloads folder (excl. subfolders) and sorts the files by scanning their extensions, moving them to the specified folders after a while.
+
+**default time is 10m, edit if you need more, otherwise ongoing downloads will fail**
 
 Works with files that include spaces and special characters.
 
