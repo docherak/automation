@@ -8,8 +8,6 @@ It scans for any changes in the Downloads folder (excl. subfolders) and sorts th
 
 Works with files that include spaces and special characters.
 
-Tested with [zsh](https://www.zsh.org/).
-
 **Prerequisites:**
 
 ```
