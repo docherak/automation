@@ -25,11 +25,12 @@ chmod a+x downloadsScanner.sh
 ./downloadsScanner.sh
 ```
 
-~~**How I launch this on reboot:**
+*Not working, too lazy to fix rn*
+~~How I launch this on reboot:~~
 
 ```
 crontab -e
 
 // add the following line:
 @reboot [path to shell script] & disown
-```~~
+```
