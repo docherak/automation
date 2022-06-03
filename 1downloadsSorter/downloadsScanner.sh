@@ -1,4 +1,5 @@
 #!/bin/bash
+
 search_dir=/home/$USER/Downloads
 
 # Quick access in case of renaming folders
@@ -14,12 +15,17 @@ PICS=Pictures
 # prereq: inotify-tools
 while inotifywait -e modify,create,delete,move $search_dir
 do
-	sleep 10m
+	until [ ! -f /home/docherak/Downloads/*.part* ]
+	do
+		sleep 5
+#		echo "hello"
+	done
 	
 	for file in ${search_dir}/*
 	do
 		filename=$(basename "$file")
-		
+#		echo $filename
+
 		if [[ ($filename == *.txt*) ||
 			($filename == *.doc*) ||
 			($filename == *.pdf*) ||
