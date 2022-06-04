@@ -15,6 +15,8 @@ PICS=Pictures
 # prereq: inotify-tools
 while inotifywait -e modify,create,delete,move $search_dir
 do
+	sleep 10
+
 	until [ ! -f /home/docherak/Downloads/*.part* ]
 	do
 		sleep 5

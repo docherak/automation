@@ -1,10 +1,7 @@
 # Downloads Manager
 The following is a bash script I use to manage my Downloads folder.
 
-It scans for any changes in the Downloads folder (excl. subfolders) and sorts the files by scanning their extensions, moving them to the specified folders after a while.
-
-~~default time is 10m, edit if you need more, otherwise ongoing downloads will fail~~
- *Found out about the existence of "until", so this should not be an issue no more, ergo "sleep" removed*
+Program waits for any changes in the Downloads folder and after it notices one, it waits for 10s before executing loop that checks for existence of .part files and waits until they disappear before moving all files to the specified directories, based on their extension.
 
 Works with files that include spaces and special characters.
 
